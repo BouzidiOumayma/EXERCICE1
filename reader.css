@@ -1,0 +1,56 @@
+/* Styles de base */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s; /* Transition de couleur de fond au survol */
+}
+
+table {
+    display: none; /* Masque le tableau par défaut */
+}
+
+
+/* Styles pour les cartes */
+.card {
+    width: 90%;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s; /* Transition d'ombre au survol */
+    text-align: left;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer horizontalement le contenu */
+    justify-content: center; /* Centrer verticalement le contenu */
+}
+
+.card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Augmenter l'ombre au survol */
+    background-color: #e0e0e0; /* Changer la couleur de fond au survol */
+}
+
+.card-title {
+    background-color: #d9b8d0;
+    color: #0a0a0a;
+    font-weight: bold;
+}
+
+.card:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Styles pour les images dans les cartes */
+.card img {
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s; /* Transition de l'échelle au survol */
+}
+
+/* Exemple de transition au survol */
+.card img:hover {
+    transform: scale(1.1); /* Augmente l'échelle de l'image au survol */
+}
